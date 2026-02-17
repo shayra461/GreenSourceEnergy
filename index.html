@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Source Energy LLC - Solar Power Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Oswald:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="main-header">
+        <div class="logo">
+            <a href="index.html">
+                <!-- Ensure logo.svg is in assets/ -->
+                <img src="assets/logo.svg" alt="Green Source Energy Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="btn-neon">Get a Quote</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="overlay"></div>
+
+        <div class="container" style="position: relative; z-index: 2;">
+            <p class="animate-text"
+                style="color: var(--primary-green); text-transform: uppercase; letter-spacing: 4px; font-weight: 600; margin-bottom: 20px;">
+                The Future Is Bright</p>
+            <h1 class="animate-text delay-1"
+                style="font-size: clamp(3rem, 8vw, 6rem); line-height: 1; margin-bottom: 30px;">
+                Sustainable <br> <span class="highlight">Energy</span> Solutions
+            </h1>
+            <p class="animate-text delay-2"
+                style="font-size: 1.2rem; color: #ddd; max-width: 600px; margin: 0 auto 50px;">
+                Transform your home with premium solar installations. Expert rooftop and ground mount systems designed
+                for efficiency and longevity.
+            </p>
+            <div class="animate-text delay-3">
+                <a href="services.html" class="btn-neon" style="margin-right: 20px;">Explore Services</a>
+                <a href="projects.html" class="btn-outline">View Our Work</a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div
+            style="position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); animation: bounce 2s infinite;">
+            <i class="fas fa-chevron-down" style="color: var(--text-muted); font-size: 1.5rem;"></i>
+        </div>
+    </section>
+
+    <!-- Creative Features / Who We Are -->
+    <section class="section-padding bg-darker" style="position: relative; overflow: hidden;">
+        <!-- Background Pattern -->
+        <div
+            style="position: absolute; top:0; left:0; width:100%; height:100%; background-image: repeating-linear-gradient(45deg, rgba(102, 255, 0, 0.03) 0px, rgba(102, 255, 0, 0.03) 1px, transparent 1px, transparent 10px); pointer-events: none;">
+        </div>
+
+        <div class="container">
+            <div class="features-wrapper" style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
+
+                <!-- Left: Tabs Navigation -->
+                <div class="features-nav scroll-reveal" style="flex: 1; min-width: 280px;">
+                    <p
+                        style="color: var(--primary-green); letter-spacing: 2px; text-transform: uppercase; font-size: 0.9rem; margin-bottom: 20px;">
+                        Company Features</p>
+                    <h2 style="font-size: 2.5rem; line-height: 1.2; margin-bottom: 40px;">How We Operate As The
+                        <br><span class="highlight">Best Solar Firm</span>
+                    </h2>
+
+                    <div class="nav-tabs">
+                        <button class="tab-btn active" data-target="tab-mission">
+                            Company Mission <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <button class="tab-btn" data-target="tab-objective">
+                            Company Objective <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <button class="tab-btn" data-target="tab-process">
+                            Work Process <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <button class="tab-btn" data-target="tab-support">
+                            Support & Care <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Center: Image Shape -->
+                <div class="features-img scroll-reveal delay-1"
+                    style="flex: 1; min-width: 300px; position: relative; display: flex; justify-content: center;">
+                    <div class="img-arch-mask">
+                        <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=1000&auto=format&fit=crop"
+                            alt="Green Energy Landscape">
+                    </div>
+                    <!-- Rotating Badge -->
+                    <div class="rotating-badge">
+                        <svg viewBox="0 0 100 100" width="120" height="120">
+                            <defs>
+                                <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
+                            </defs>
+                            <text font-size="11">
+                                <textPath xlink:href="#circle">
+                                    Green Source Energy • Sustainable Future •
+                                </textPath>
+                            </text>
+                        </svg>
+                        <div class="badge-center"><i class="fas fa-leaf"></i></div>
+                    </div>
+                </div>
+
+                <!-- Right: Content -->
+                <div class="features-content scroll-reveal delay-2"
+                    style="flex: 1; min-width: 300px; padding-top: 20px;">
+
+                    <!-- Tab 1: Mission -->
+                    <div id="tab-mission" class="tab-content active">
+                        <h3 style="font-size: 2rem; margin-bottom: 20px;">Missions Made for <br> <span
+                                class="highlight">Best Performance</span></h3>
+                        <p style="color: var(--text-muted); margin-bottom: 30px;">
+                            We are dedicated to bringing clean energy to more single-family homes every day. Our mission
+                            is to reduce reliance on grid power while increasing property value and sustainability.
+                        </p>
+                        <ul class="check-list-styled">
+                            <li><i class="fas fa-check-circle"></i> Ensuring best operation for our customers</li>
+                            <li><i class="fas fa-check-circle"></i> Operating as an environmentally friendly company
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> Lowering energy costs with high efficiency</li>
+                            <li><i class="fas fa-check-circle"></i> Making renewable energy accessible to all</li>
+                        </ul>
+                    </div>
+
+                    <!-- Tab 2: Objective -->
+                    <div id="tab-objective" class="tab-content">
+                        <h3 style="font-size: 2rem; margin-bottom: 20px;">Targeting <br> <span class="highlight">Zero
+                                Emissions</span></h3>
+                        <p style="color: var(--text-muted); margin-bottom: 30px;">
+                            Our primary objective is to facilitate the transition to 100% renewable energy for
+                            residential areas in Illinois. We aim to set the standard for quality and integrity in the
+                            solar industry.
+                        </p>
+                        <ul class="check-list-styled">
+                            <li><i class="fas fa-check-circle"></i> Reducing local carbon footprint</li>
+                            <li><i class="fas fa-check-circle"></i> Promoting energy independence</li>
+                            <li><i class="fas fa-check-circle"></i> Delivering long-term value to homeowners</li>
+                        </ul>
+                    </div>
+
+                    <!-- Tab 3: Process -->
+                    <div id="tab-process" class="tab-content">
+                        <h3 style="font-size: 2rem; margin-bottom: 20px;">Seamless <br> <span
+                                class="highlight">Installation</span></h3>
+                        <p style="color: var(--text-muted); margin-bottom: 30px;">
+                            From the initial consultation to the final flip of the switch, our process is transparent
+                            and hassle-free. We handle permits, design, and installation with precision.
+                        </p>
+                        <ul class="check-list-styled">
+                            <li><i class="fas fa-check-circle"></i> Free Site Assessment</li>
+                            <li><i class="fas fa-check-circle"></i> Custom Engineering Design</li>
+                            <li><i class="fas fa-check-circle"></i> Rapid & Clean Installation</li>
+                        </ul>
+                    </div>
+
+                    <!-- Tab 4: Support -->
+                    <div id="tab-support" class="tab-content">
+                        <h3 style="font-size: 2rem; margin-bottom: 20px;">Lifetime <br> <span
+                                class="highlight">Support</span></h3>
+                        <p style="color: var(--text-muted); margin-bottom: 30px;">
+                            Our relationship doesn't end after installation. We provide ongoing monitoring and
+                            maintenance support to ensure your system operates at peak efficiency for decades.
+                        </p>
+                        <ul class="check-list-styled">
+                            <li><i class="fas fa-check-circle"></i> 25-Year Performance Warranty</li>
+                            <li><i class="fas fa-check-circle"></i> Active System Monitoring</li>
+                            <li><i class="fas fa-check-circle"></i> Local Customer Service</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="case-studies" class="section-padding">
+        <div class="container">
+            <div class="text-center scroll-reveal">
+                <p
+                    style="color: var(--primary-green); text-transform: uppercase; letter-spacing: 2px; font-weight: 600; margin-bottom: 20px;">
+                    Our Case Studies</p>
+                <h2 style="font-size: 3rem; margin-bottom: 50px;">Review Our Case Studies To <br> Get A <span
+                        class="highlight">Better Idea</span></h2>
+
+                <!-- Filter Tabs -->
+                <div class="case-filter"
+                    style="display: flex; justify-content: center; gap: 40px; margin-bottom: 60px; flex-wrap: wrap;">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="installation">Installation</button>
+                    <button class="filter-btn" data-filter="maintenance">Maintenance</button>
+                    <button class="filter-btn" data-filter="power-grid">Power Grid</button>
+                    <button class="filter-btn" data-filter="repair">Repair</button>
+                </div>
+            </div>
+
+            <!-- Case Grid -->
+            <div class="case-grid">
+
+                <!-- Item 1: Installation -->
+                <div class="case-item scroll-reveal delay-1" data-category="installation">
+                    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1000&auto=format&fit=crop"
+                        alt="Solar Installation">
+                    <div class="case-overlay">
+                        <div class="case-tags">
+                            <span class="tag">Installation</span>
+                            <span class="tag">Residential</span>
+                        </div>
+                        <div class="case-info">
+                            <h3>Empowering Future With Renewable Energy</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2: Repair -->
+                <div class="case-item scroll-reveal delay-2" data-category="repair">
+                    <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=1000&auto=format&fit=crop"
+                        alt="Rooftop Project">
+                    <div class="case-overlay">
+                        <div class="case-tags">
+                            <span class="tag">Repair</span>
+                            <span class="tag">Grid</span>
+                        </div>
+                        <div class="case-info">
+                            <h3>Maximizing Efficiency On Residential Rooftops</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3: Power Grid -->
+                <div class="case-item scroll-reveal delay-3" data-category="power-grid">
+                    <img src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?q=80&w=1000&auto=format&fit=crop"
+                        alt="Field Installation">
+                    <div class="case-overlay">
+                        <div class="case-tags">
+                            <span class="tag">Power Grid</span>
+                            <span class="tag">Turbine</span>
+                        </div>
+                        <div class="case-info">
+                            <h3>Sustainable Power For Modern Living</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4: Maintenance -->
+                <div class="case-item scroll-reveal delay-1" data-category="maintenance">
+                    <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?q=80&w=1000&auto=format&fit=crop"
+                        alt="Solar Maintenance">
+                    <div class="case-overlay">
+                        <div class="case-tags">
+                            <span class="tag">Maintenance</span>
+                            <span class="tag">Support</span>
+                        </div>
+                        <div class="case-info">
+                            <h3>Proactive System Health Checks</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5: Installation -->
+                <div class="case-item scroll-reveal delay-2" data-category="installation">
+                    <img src="https://images.unsplash.com/photo-1566093097221-ac2335b09e70?q=80&w=1000&auto=format&fit=crop"
+                        alt="Commercial Install">
+                    <div class="case-overlay">
+                        <div class="case-tags">
+                            <span class="tag">Installation</span>
+                            <span class="tag">Commercial</span>
+                        </div>
+                        <div class="case-info">
+                            <h3>Large Scale Commercial Deployment</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6: Power Grid -->
+                <div class="case-item scroll-reveal delay-3" data-category="power-grid">
+                    <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=1000&auto=format&fit=crop"
+                        alt="Power Lines">
+                    <div class="case-overlay">
+                        <div class="case-tags">
+                            <span class="tag">Power Grid</span>
+                            <span class="tag">Infrastructure</span>
+                        </div>
+                        <div class="case-info">
+                            <h3>Grid Modernization Project</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Teaser -->
+    <section class="section-padding bg-darker">
+        <div class="container">
+            <div class="text-center scroll-reveal" style="margin-bottom: 60px;">
+                <h2 style="font-size: 2.5rem;">Our Core <span class="highlight">Solutions</span></h2>
+                <p style="color: var(--text-muted); max-width: 600px; margin: 10px auto;">Specialized solar
+                    implementations for residential properties.</p>
+            </div>
+
+            <div class="card-grid">
+                <!-- Service 1 -->
+                <div class="card-glass creative-card scroll-reveal delay-1">
+                    <div class="icon-box">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Residential Rooftop</h3>
+                    <p style="margin-bottom: 20px; color: var(--text-muted);">
+                        Seamless integration with your home's architecture. High-efficiency panels that maximize energy
+                        capture without compromising aesthetics.
+                    </p>
+                    <a href="services.html" class="learn-more-btn">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="card-glass creative-card scroll-reveal delay-2">
+                    <div class="icon-box">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Ground Mounts</h3>
+                    <p style="margin-bottom: 20px; color: var(--text-muted);">
+                        Ideal for properties with open space. Optimize sun exposure with perfectly angled ground-mounted
+                        arrays for maximum output.
+                    </p>
+                    <a href="services.html" class="learn-more-btn">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="card-glass creative-card scroll-reveal delay-3">
+                    <div class="icon-box">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Energy Independence</h3>
+                    <p style="margin-bottom: 20px; color: var(--text-muted);">
+                        Take control of your power bills. Our systems are designed to offset consumption and provide
+                        long-term savings.
+                    </p>
+                    <a href="services.html" class="learn-more-btn">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creative Lightbulb CTA Section -->
+    <section class="section-padding" style="background: #111; overflow: hidden; position: relative;">
+        <!-- Background Glow -->
+        <div
+            style="position: absolute; top: 50%; left: 30%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(102,255,0,0.15) 0%, rgba(0,0,0,0) 70%); transform: translate(-50%, -50%); pointer-events: none;">
+        </div>
+
+        <div class="container">
+            <div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 60px;">
+
+                <!-- Left: Creative Image -->
+                <div class="col-img scroll-reveal"
+                    style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
+                    <div class="creative-img-wrapper" style="position: relative;">
+                        <!-- Lightbulb / Solar Concept Image -->
+                        <img src="assets/images/creative-bulb-v2.png" alt="Energy Idea"
+                            style="max-width: 100%; height: auto; border-radius: 20px; box-shadow: 0 20px 50px rgba(0,0,0,0.5); filter: brightness(0.9);">
+
+                        <!-- Floating Elements for depth -->
+                        <div class="floating-badge"
+                            style="position: absolute; top: -20px; right: -20px; background: var(--primary-yellow); color: #000; padding: 15px 25px; font-weight: 700; border-radius: 10px; box-shadow: 0 10px 20px rgba(255, 230, 0, 0.3); animation: float 6s ease-in-out infinite;">
+                            100% Clean
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Text Content -->
+                <div class="col-text scroll-reveal delay-1" style="flex: 1; min-width: 300px;">
+                    <p
+                        style="color: var(--primary-yellow); letter-spacing: 2px; text-transform: uppercase; font-weight: 600; margin-bottom: 20px;">
+                        Solar Enterprise
+                    </p>
+                    <h2 style="font-size: 3rem; line-height: 1.2; margin-bottom: 30px;">
+                        The Energy That Is <br> <span class="highlight">Sourceable, Free & Healthy</span>
+                    </h2>
+                    <p style="color: var(--text-muted); margin-bottom: 40px; font-size: 1.1rem; line-height: 1.8;">
+                        Embrace the power of the sun. Unlike fossil fuels, solar energy is abundant, renewable, and
+                        sustainable.
+                        It reduces your carbon footprint while maximizing your savings. Make the switch to a brighter,
+                        cleaner future today.
+                    </p>
+
+                    <div class="cta-group" style="display: flex; gap: 30px; align-items: center; flex-wrap: wrap;">
+                        <a href="about.html" class="btn-neon">Know More</a>
+                        <div class="phone-link" style="display: flex; align-items: center; gap: 10px;">
+                            <i class="fas fa-phone-alt" style="color: var(--primary-green); font-size: 1.2rem;"></i>
+                            <span style="font-family: var(--font-heading); font-size: 1.2rem; font-weight: 500;">(815)
+                                354-1808</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section-padding" style="background: #0a0a0a; position: relative;">
+        <div class="container">
+            <div class="text-center scroll-reveal">
+                <p
+                    style="color: var(--primary-green); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px;">
+                    Client Feedback</p>
+                <h2 style="font-size: 3rem; margin-bottom: 60px; line-height: 1.2;">Trusted By <span
+                        class="highlight">Thousands</span></h2>
+            </div>
+
+            <div class="testimonial-wrapper scroll-reveal delay-1"
+                style="position: relative; max-width: 1000px; margin: 0 auto;">
+
+                <!-- Slider Track -->
+                <div class="testimonial-track-container" style="overflow: hidden;">
+                    <ul class="testimonial-track"
+                        style="display: flex; transition: transform 0.5s ease-in-out; padding: 0; list-style: none; margin: 0;">
+
+                        <!-- Slide 1 -->
+                        <li class="testimonial-slide" style="min-width: 100%; box-sizing: border-box; padding: 20px;">
+                            <div class="testimonial-card glass-card">
+                                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                <p class="review-text">"Green Source Energy completely transformed our energy
+                                    consumption. The installation was quick, professional, and the savings were
+                                    immediate. Highly recommended for anyone looking to go green!"</p>
+                                <div class="client-profile">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop"
+                                        alt="Client 1">
+                                    <div class="client-details">
+                                        <h4>Michael Ross</h4>
+                                        <p>Homeowner, California</p>
+                                        <div class="stars" style="color: var(--primary-yellow);"><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Slide 2 -->
+                        <li class="testimonial-slide" style="min-width: 100%; box-sizing: border-box; padding: 20px;">
+                            <div class="testimonial-card glass-card">
+                                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                <p class="review-text">"The team was incredibly knowledgeable and guided us through
+                                    every step. The solar panels look great on our roof and the system efficiency is
+                                    beyond what we expected."</p>
+                                <div class="client-profile">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=150&auto=format&fit=crop"
+                                        alt="Client 2">
+                                    <div class="client-details">
+                                        <h4>Sarah Jenkins</h4>
+                                        <p>Small Business Owner</p>
+                                        <div class="stars" style="color: var(--primary-yellow);"><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Slide 3 -->
+                        <li class="testimonial-slide" style="min-width: 100%; box-sizing: border-box; padding: 20px;">
+                            <div class="testimonial-card glass-card">
+                                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                <p class="review-text">"Best investment we've made for our property. The support team is
+                                    fantastic and the app makes monitoring our energy production so easy. True
+                                    professionals!"</p>
+                                <div class="client-profile">
+                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&auto=format&fit=crop"
+                                        alt="Client 3">
+                                    <div class="client-details">
+                                        <h4>David Chen</h4>
+                                        <p>Residential Client</p>
+                                        <div class="stars" style="color: var(--primary-yellow);"><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Controls -->
+                <button class="slider-btn prev-btn" style="left: -60px;"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn next-btn" style="right: -60px;"><i class="fas fa-chevron-right"></i></button>
+
+                <!-- Dots -->
+                <div class="slider-dots" style="text-align: center; margin-top: 30px;">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Vision CTA (Existing) -->
+    <section class="section-padding"
+        style="background: linear-gradient(rgba(10,10,10,0.8), rgba(10,10,10,0.8)), url('https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?q=80&w=1920&auto=format&fit=crop') center/cover fixed;">
+        <div class="container text-center scroll-reveal">
+            <h2 style="font-size: 3rem; margin-bottom: 20px;">Ready to Go <span class="highlight">Green?</span></h2>
+            <p style="font-size: 1.2rem; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto;">
+                Join the renewable revolution with Green Source Energy LLC. Custom solutions for your unique energy
+                needs.
+            </p>
+            <a href="contact.html" class="btn-neon">Request a Free Quote</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <img src="assets/logo.svg" alt="Footer Logo"
+                        style="height: 40px; margin-bottom: 20px; filter: grayscale(100%) opacity(0.7);">
+                    <p>Empowering homeowners with sustainable energy solutions. Quality, integrity, and efficiency in
+                        every installation.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-phone" style="color: var(--primary-green); margin-right: 10px;"></i> (815)
+                            354-1808</li>
+                        <li><i class="fas fa-user" style="color: var(--primary-green); margin-right: 10px;"></i> Lee
+                            Hummel</li>
+                        <li><i class="fas fa-map-marker-alt"
+                                style="color: var(--primary-green); margin-right: 10px;"></i> Illinois Service Area</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Green Source Energy LLC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
